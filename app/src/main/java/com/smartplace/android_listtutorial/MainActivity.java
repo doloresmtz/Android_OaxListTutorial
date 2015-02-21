@@ -33,16 +33,16 @@ public class MainActivity extends Activity {
 
         //create new list item instance with pre-fill values
         ListItem listItem = new ListItem();
-        listItem.setHeader("Item 1");
-        listItem.setSubHeader("SubItem 1");
+        listItem.setHeader("Benjamin Gil");
+        listItem.setSubHeader("Manager");
         listItem.setImageUser(getResources().getDrawable(R.drawable.image_user));
         //add list item to list
         mArrayList.add(listItem);
 
         //create new list item instance and pre-fill values
         listItem = new ListItem();
-        listItem.setHeader("Item 2");
-        listItem.setSubHeader("SubItem 2");
+        listItem.setHeader("Rico Noel");
+        listItem.setSubHeader("Fielder Central");
         listItem.setImageUser(getResources().getDrawable(R.drawable.image_user));
         //add list item to list
         mArrayList.add(listItem);
@@ -66,19 +66,21 @@ public class MainActivity extends Activity {
 
                 //create new list item instance and pre-fill values
                 ListItem listItem = new ListItem();
-                listItem.setHeader("Item " + (mArrayList.size()+1));
-                listItem.setSubHeader("SubItem " + (mArrayList.size()+1));
+                listItem.setHeader("Santiago Dolores");
+                listItem.setSubHeader("Catcher");
                 listItem.setImageUser(getResources().getDrawable(R.drawable.image_user));
                 //add item to array list
                 mArrayList.add(listItem);
 
                 //create new list item instance and pre-fill values
+                /*
                 listItem = new ListItem();
                 listItem.setHeader("Item " + (mArrayList.size()+1));
                 listItem.setSubHeader("SubItem " + (mArrayList.size()+1));
                 listItem.setImageUser(getResources().getDrawable(R.drawable.image_user));
                 //add item to array list
                 mArrayList.add(listItem);
+                */
 
                 //notify the adapter the list has changed with new data.
                 listItemAdapter.notifyDataSetChanged();
